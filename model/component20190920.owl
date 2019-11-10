@@ -1,0 +1,998 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#"
+     xml:base="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#CanBeReplacedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#CanBeReplacedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#CanReplace"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#进口元器件产品"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国产元器件产品"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#CanReplace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#CanReplace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国产元器件产品"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#进口元器件产品"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Designs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Designs">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isDesignedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Manufactures -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Manufactures">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isManufacturedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#主机厂"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇型号"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Produces">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isProducedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Uses">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isUsedOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#hasCountryRegion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#hasCountryRegion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇型号"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国别"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#hasSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#hasSystem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇型号"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isBelongTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isBelongTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isDesignedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isDesignedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#部件（设备）"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#成品（部件）厂家"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isInColour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isInColour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isManufacturedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isManufacturedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇型号"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#主机厂"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isProducedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isProducedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件产品"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isUsedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#isUsedOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件产品"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#部件（设备）"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#BGA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#BGA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#封装形式"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I三端滤波电容器 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I三端滤波电容器">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I电容器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I中央处理器（CPU） -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I中央处理器（CPU）">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I微处理器（MPU）"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I半导体集成电路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I半导体集成电路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#进口元器件产品"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I变压器 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I变压器">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#进口元器件产品"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I微处理器（MPU） -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I微处理器（MPU）">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I数字集成电路"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#红色元器件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I数字集成电路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I数字集成电路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I半导体集成电路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I模拟集成电路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I模拟集成电路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I半导体集成电路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I混合集成电路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I混合集成电路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I半导体集成电路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I电容器 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I电容器">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#进口元器件产品"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#MOS数字电路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#MOS数字电路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I数字集成电路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N中央处理器（CPU） -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N中央处理器（CPU）">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N微处理器（MPU）"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N半导体集成电路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N半导体集成电路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国产元器件产品"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N微处理器（MPU） -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N微处理器（MPU）">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N数字集成电路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N数字集成电路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N数字集成电路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N半导体集成电路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N模拟集成电路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N模拟集成电路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N半导体集成电路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N混合集成电路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N混合集成电路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N半导体集成电路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N电容器 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N电容器">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国产元器件产品"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#RadialLead -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#RadialLead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#封装形式"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#SOIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#SOIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#封装形式"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#TSSOP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#TSSOP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#封装形式"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#主机厂 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#主机厂"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#五色分级 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#五色分级"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件产品 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件产品"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件故障 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件故障"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国产元器件产品 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国产元器件产品">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件产品"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国别 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国别"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#塑封器件分层 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#塑封器件分层">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件故障"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#塑料封装 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#塑料封装">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#封装形式"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#封装形式 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#封装形式"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#成品（部件）厂家 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#成品（部件）厂家"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#断线 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#断线">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件故障"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#橙色元器件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#橙色元器件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#五色分级"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#焊点脱落 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#焊点脱落">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件故障"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#物理损伤 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#物理损伤">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件故障"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#紫色元器件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#紫色元器件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#五色分级"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#红色元器件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#红色元器件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#五色分级"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#绿色元器件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#绿色元器件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#五色分级"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#过电流（电压）烧毁 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#过电流（电压）烧毁">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件故障"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#进口元器件产品 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#进口元器件产品">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件产品"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#部件（设备） -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#部件（设备）"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#金属电迁移 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#金属电迁移">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件故障"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#静电击穿 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#静电击穿">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件故障"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇型号 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇型号"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#黄色元器件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#黄色元器件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#五色分级"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#AS-0011转台 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#AS-0011转台">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#部件（设备）"/>
+        <isBelongTo rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#显示系统"/>
+        <isDesignedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#北京青云航空仪表公司"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Fairchild -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Fairchild">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I3_Processer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I3_Processer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#BGA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I中央处理器（CPU）"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#红色元器件"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#美国"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Intel"/>
+        <isUsedOn rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇控制计算机"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I5_Processer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I5_Processer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#BGA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I中央处理器（CPU）"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#红色元器件"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#美国"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Intel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I7_Processer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I7_Processer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#BGA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I中央处理器（CPU）"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#红色元器件"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#美国"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Intel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I9_Processer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I9_Processer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#BGA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I中央处理器（CPU）"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#红色元器件"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#美国"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Intel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Infineon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Infineon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Intel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Intel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#MEMS组合导航系统 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#MEMS组合导航系统">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#部件（设备）"/>
+        <isBelongTo rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#导航系统"/>
+        <isDesignedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#航空工业西安飞行自动控制研究所"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Murata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Murata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#NEC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#NEC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#NXP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#NXP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#荷兰"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Pulse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Pulse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#美国"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#bx1194wnl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#bx1194wnl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I变压器"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#美国"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Pulse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#cstls32m0x51-b0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#cstls32m0x51-b0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I三端滤波电容器"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#RadialLead"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#日本"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Murata"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#中国 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#中国">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国别"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#中国科学院计算所 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#中国科学院计算所">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#中国"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#中航光电科技股份有限公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#中航光电科技股份有限公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#兴登伯格 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#兴登伯格">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇型号"/>
+        <hasSystem rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#动力系统"/>
+        <hasSystem rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#控制系统"/>
+        <hasSystem rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#武器系统"/>
+        <hasSystem rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#电子与计算机系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#动力系统 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#动力系统">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#北京718友晟电子有限公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#北京718友晟电子有限公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#北京718友益电子有限公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#北京718友益电子有限公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#元器件生产厂家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#北京青云航空仪表公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#北京青云航空仪表公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#成品（部件）厂家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#北京飞艇制造公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#北京飞艇制造公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#主机厂"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#安全保障系统 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#安全保障系统">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#导航系统 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#导航系统">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#德国 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#德国">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国别"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#控制系统 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#控制系统">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#日本 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#日本">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国别"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#显示系统 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#显示系统">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#机电系统 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#机电系统">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#武器系统 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#武器系统">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#海南飞艇制造公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#海南飞艇制造公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#主机厂"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#中国"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#电子与计算机系统 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#电子与计算机系统">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#美国 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#美国">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国别"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#航空工业西安飞行自动控制研究所 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#航空工业西安飞行自动控制研究所">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#成品（部件）厂家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇电系统 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇电系统">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#荷兰 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#荷兰">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#国别"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#西安航空计算技术研究所 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#西安航空计算技术研究所">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#成品（部件）厂家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#西藏飞艇制造公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#西藏飞艇制造公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#主机厂"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#中国"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#谢南多尔 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#谢南多尔">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇型号"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#雷达系统 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#雷达系统">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#青海飞艇制造公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#青海飞艇制造公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#主机厂"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#中国"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞腾 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞腾">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N中央处理器（CPU）"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇控制计算机 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇控制计算机">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#部件（设备）"/>
+        <isBelongTo rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#电子与计算机系统"/>
+        <isDesignedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#西安航空计算技术研究所"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇材料 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇材料">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#艇载系统"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#齐柏林 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#齐柏林">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#飞艇型号"/>
+        <isManufacturedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#青海飞艇制造公司"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#龙芯 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#龙芯">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N中央处理器（CPU）"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#中国科学院计算所"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#74abt573csjx -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#74abt573csjx">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#MOS数字电路"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#SOIC"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#美国"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#Fairchild"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#74ahct1g00gw125 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#74ahct1g00gw125">
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#MOS数字电路"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#TSSOP"/>
+        <hasCountryRegion rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#荷兰"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#NXP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I数字集成电路"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I模拟集成电路"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#I混合集成电路"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N数字集成电路"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N模拟集成电路"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/a/ontologies/2019/8/untitled-ontology-43#N混合集成电路"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
